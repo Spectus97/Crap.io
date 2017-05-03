@@ -3,17 +3,20 @@
 	<head>
 		<title>Crap.io</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="client/index.css" />
 	</head>
 
 	<body>
-		<div id="gameDiv" style="display:none;">
-			<canvas id="ctx" width="500" height="500" style="border:1px solid #000000;"></canvas>
+		<div id="gameDiv" >
+			<canvas id="game" width="500" height="500"></canvas>
 		</div>
 
 		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 		<script>
-			var WIDTH = 500;
-			var HEIGHT = 500;
+			var canvas = document.getElementById("game");
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+
 			var socket = io();
 		</script>
 	</body>

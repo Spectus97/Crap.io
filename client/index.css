@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body, html{
+    background-color: lightblue;
+    height: 100%;
+}
+
+#gameDiv{
+    border:1px black solid;
+    position: absolute;
+    left:0px;
+    top:0px;
+    height: 100%;
+    width: 100%;
+}
+
+#gameDiv canvas{
+    display: block;
+}
